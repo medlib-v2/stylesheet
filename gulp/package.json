@@ -1,0 +1,21 @@
+{
+  "name": "medlib-gulp",
+  "version": "1.0.0",
+  "description": "Medlib Gulp",
+  "dependencies": {},
+  "private": "true",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "latest",
+    "gulp-less": "latest",
+    "gulp-merge": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-minify-html": "latest",
+    "gulp-uglify": "latest",
+    "gulp-watch": "latest",
+    "laravel-elixir": "latest",
+    "gulp-autoprefixer": "latest",
+    "less-plugin-autoprefix": "latest",
+    "path": "latest"
+  }
+}
