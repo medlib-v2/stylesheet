@@ -1,0 +1,315 @@
+.content{
+  min-height: 100%;
+  padding: @content-padding-top @content-padding-horizontal @content-padding-vertical;
+  background-color: @body-bg;
+
+  @media (max-width: @screen-xs-max) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.content-search{
+  position: relative;
+  height: 100%;
+  margin-top: -21px;
+
+  .search {
+	background: #F6F7F9 url("../img/books.jpg") repeat scroll center center;
+	opacity: 0.91;
+	padding: 20px 0 10px;
+	-moz-box-shadow: 0px 3px 4px 0px #656565;
+	-webkit-box-shadow: 0px 3px 4px 0px #656565;
+	-o-box-shadow: 0px 3px 4px 0px #656565;
+	box-shadow: 0px 3px 4px 0px #656565;
+
+	.form-group {
+		width: 520px;
+		margin: 0 auto 0;
+		text-align: center;
+		position: relative;
+		left: -10px;
+
+		.input-group {
+			margin-bottom: 10px;
+		}
+	}
+  }
+}
+
+.search-title {
+	text-align: center;
+	padding: 15px 0 20px;
+	z-index: 11;
+	cursor: default;
+
+	a,
+	span {
+		color: white;
+		text-decoration: none;
+		font-size: 45px;
+		letter-spacing: 0;
+		border-bottom: 3px solid rgba(255,255,255,0.5);
+	}
+	a,
+	span:hover {
+		border-bottom: 3px solid rgba(255,255,255,0.8);
+	}
+}
+
+.search-menu {
+	text-align: center;
+	padding-top: 10px;
+
+	li {
+		display: inline-block;
+	};
+
+	a {
+		font-weight: bold;
+		font-size: 15px;
+		margin: 0 15px 0;
+		color: @white;
+		border-bottom: 1px dotted rgba(255,255,255,0.6);
+		font-family: @font-family-semiblod;
+	};
+
+	a:hover {
+		text-decoration: none;
+		color: #e0e0e0;
+		border-bottom: 1px solid rgba(255,255,255,0.6);
+	};
+}
+
+.input-group .input-group-btn .btn-search {
+	height: auto;
+	top: -20px;
+}
+
+.icons {
+	list-style:none;
+	margin: 5px 0 0 -4px;
+	height:	19px;
+	position:relative;
+}
+
+.icons {
+	li {
+		background:	url("../img/icons.png") no-repeat;
+		float: left;
+		height:	19px;
+		text-indent: -9999px;
+		cursor:	pointer;
+		margin-right: 11px;
+
+		&.all {
+			width:	27px;
+			height: 27px;
+
+			&:hover,
+			&.active {
+				background-position:left bottom;
+			}
+		}
+		&.images {
+			width:	27px;
+			height: 27px;
+			background-position: -32px 0;
+
+			&:hover,
+			&.active {
+				background-position: -32px bottom;
+			}
+
+		}
+		&.books {
+			width: 	27px;
+			height: 28px;
+			background-position: -61px 0;
+
+			&:hover,
+			&.active {
+				background-position: -61px bottom;
+			}
+		}
+
+		&.videos {
+			width: 	29px;
+			height: 28px;
+			background-position: right 0;
+
+			&:hover,
+			&.active {
+				background-position: right bottom;
+			}
+		}
+	}
+
+	span.arrow {
+		width:		11px;
+		height:		10px;
+		margin:		30px 0 0 5px;
+		position:	absolute;
+		background:	url('../img/arrow.png') no-repeat;
+		left:		0;
+	}
+}
+
+.books-items {
+	padding-top: 60px;
+
+	h1 {
+		line-height: 0.3em;
+		margin: 10px 0 11px;
+		font-family: @font-family-base;
+		display: block;
+		font-size: 1.3em;
+		-webkit-margin-before: 0.67em;
+		-webkit-margin-after: 0.67em;
+		-webkit-margin-start: 0;
+		-webkit-margin-end: 0;
+		font-weight: normal;
+	}
+
+	h3 {
+		margin-bottom: 0;
+		font-size: 1em;
+		color: #666;
+		text-transform: uppercase;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin: 5px 0 0;
+			list-style-type: none;
+			clear: both;
+			text-align: center;
+			display: inline-block;
+			vertical-align: bottom;
+			padding-bottom: 60px;
+			position: relative;
+
+			&:hover {
+				z-index: 10000;
+				cursor: pointer;
+			}
+			&:nth-child(1) {  z-index: 18; }
+			&:nth-child(2) {  z-index: 17; }
+			&:nth-child(3) {  z-index: 16; }
+			&:nth-child(4) {  z-index: 15; }
+			&:nth-child(5) {  z-index: 14; }
+			&:nth-child(6) {  z-index: 13; }
+			&:nth-child(7) {  z-index: 12; }
+			&:nth-child(8) {  z-index: 11; }
+			&:nth-child(9) {  z-index: 10; }
+			&:nth-child(10) {  z-index: 9; }
+			&:nth-child(11) {  z-index: 8; }
+			&:nth-child(12) {  z-index: 7; }
+			&:nth-child(13) {  z-index: 6; }
+			&:nth-child(14) {  z-index: 5; }
+			&:nth-child(15) {  z-index: 4; }
+			&:nth-child(16) {  z-index: 3; }
+			&:nth-child(17) {  z-index: 2; }
+			&:nth-child(18) {  z-index: 1; }
+
+		}
+
+		ul li {
+			list-style-type: square;
+			color: #AAA;
+
+			&:hover {
+				color: #666;
+			}
+		}
+
+		&,ul li {
+			margin: 0;
+		}
+	}
+
+	.book {
+		display: inline-block;
+		box-shadow: 5px 5px 20px #333;
+
+		img { vertical-align: middle; border: none; }
+	}
+}
+
+.books-items ul li,
+.wrap-book {
+	-moz-perspective: 100px;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-ms-perspective: 100px;
+}
+
+.book {
+	position: relative;
+	-moz-perspective: 100px;
+	-moz-transform: rotateY(-3deg);
+	-webkit-transform: perspective(100) rotateY(-3deg);
+	-ms-transform: rotateY(-3deg);
+	outline: 1px solid transparent; /* Helps smooth jagged edges in Firefox */
+	box-shadow: none;
+	margin: 0;
+	-webkit-transition: 125ms linear;
+	-moz-transition: 125ms linear;
+	transition: 125ms linear;
+}
+
+.books-items  li .book:hover {
+	-moz-perspective: 100px;
+	-moz-transform: rotateY(-5deg) scale(1.1,1.1);
+	-webkit-transform: perspective(100) rotateY(-5deg) scale(1.1,1.1);
+	-ms-transform: rotateY(-5deg) scale(1.1,1.1);
+}
+
+/* 3d transform are buggy with z-index overlays, remove them */
+.book.removeTransform,
+.safari.book {
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.safari.books-items li .book:hover  {
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.books-items .book img {
+	position: relative;
+}
+
+.books-items .book:before,
+.books-items .book:after {
+	position: absolute;
+	top: 2%;
+	height: 96%;
+	content: ' ';
+	z-index: -1;
+}
+
+.books-items .book:before {
+	width: 100%;
+	left: 6.5%;
+	background-color: #fff;
+	box-shadow: 5px 5px 20px #333;
+}
+
+.books-items .book:after {
+	width: 5%;
+	left: 100%;
+	background-color: #EFEFEF;
+	box-shadow: inset 0px 0px 5px #aaa;
+	-moz-transform: rotateY(20deg);
+	-webkit-transform: perspective(100) rotateY(20deg);
+	-ms-transform: rotateY(20deg);
+}
+
+.gecko.books-items .wrap-book .book:after {
+	width: 7%;
+	left: 98%;
+}

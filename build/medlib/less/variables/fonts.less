@@ -1,0 +1,200 @@
+/** Fonts **/
+@font-primary: 'Wark Sans', Helvetica, Arial, sans-serif;
+@font-secondary: 'Clear Sans', sans-serif;
+@font-family-sans-serif: 'Wark Sans', sans-serif;
+@headings-font-weight: 300;
+@font-family-base: 'Work Sans', sans-serif;
+@font-family-semiblod: WorkSans-SemiBold, sans-serif;
+@font-family-bold: 'Wark Sans Bold', Monaco, Menlo, Consolas, monospace, sans-serif;
+@font-family-monospace: Monaco, Menlo, Consolas, monospace;
+
+@img-url: "../img";
+@plugins-url: "../plugins";
+@local-font-path: "../fonts/worksans/";
+@local-google-font: "../fonts/google/";
+@local-fontawesome-font: "../fonts/fontawesome/";
+@local-glyphicons-font: "../fonts/glyphicons/";
+@local-ionicons-font: "../fonts/ionicons/";
+@local-weather-icons-font: "../fonts/weather-icons/";
+
+/** Work Sans fonts **/
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 100;
+  src:  local('Work Sans Thin'), local('WorkSans-Thin'),
+        url('@{local-font-path}WorkSans-Thin.woff') format('woff'),
+        url('@{local-font-path}WorkSans-Thin.woff2') format('woff2'),
+        url('@{local-font-path}WorkSans-Thin.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 200;
+  src:  local('Work Sans ExtraLight'), local('WorkSans-ExtraLight'),
+        url('@{local-font-path}WorkSans-ExtraLight.woff') format('woff'),
+        url('@{local-font-path}WorkSans-ExtraLight.woff2') format('woff2'),
+        url('@{local-font-path}WorkSans-ExtraLight.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  src:  local('Work Sans Light'), local('WorkSans-Light'),
+        url('@{local-font-path}WorkSans-Light.woff') format('woff'),
+        url('@{local-font-path}WorkSans-Light.woff2') format('woff2'),
+        url('@{local-font-path}WorkSans-Light.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:    local('Work Sans'), local('WorkSans-Regular'),
+          url('@{local-font-path}WorkSans-Regular.woff') format('woff'),
+          url('@{local-font-path}WorkSans-Regular.woff2') format('woff2'),
+          url('@{local-font-path}WorkSans-Regular.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  src:    local('Work Sans Medium'), local('WorkSans-Medium'),
+          url('@{local-font-path}WorkSans-Medium.woff') format('woff'),
+          url('@{local-font-path}WorkSans-Medium.woff2') format('woff2'),
+          url('@{local-font-path}WorkSans-Medium.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  src:    local('Work Sans SemiBold'), local('WorkSans-SemiBold'),
+          url('@{local-font-path}WorkSans-SemiBold.woff') format('woff'),
+          url('@{local-font-path}WorkSans-SemiBold.woff2') format('woff2'),
+          url('@{local-font-path}WorkSans-SemiBold.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:    local('Work Sans Bold'), local('WorkSans-Bold'),
+          url('@{local-font-path}WorkSans-Bold.woff') format('woff'),
+          url('@{local-font-path}WorkSans-Bold.woff2') format('woff2'),
+          url('@{local-font-path}WorkSans-Bold.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 800;
+  src:    local('Work Sans ExtraBold'), local('WorkSans-ExtraBold'),
+          url('@{local-font-path}WorkSans-ExtraBold.woff') format('woff'),
+          url('@{local-font-path}WorkSans-ExtraBold.woff2') format('woff2'),
+          url('@{local-font-path}WorkSans-ExtraBold.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 900;
+  src:    local('Work Sans Black'), local('WorkSans-Black'),
+  url('@{local-font-path}WorkSans-Back.woff') format('woff'),
+  url('@{local-font-path}WorkSans-Back.woff2') format('woff2'),
+  url('@{local-font-path}WorkSans-Back.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/** Google RobotoDraft fonts **/
+@font-face {
+  font-family: 'RobotoDraft';
+  font-style: normal;
+  font-weight: 300;
+  src: url('@{local-google-font}robotodraft-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'RobotoDraft';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@{local-google-font}robotodraft-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'RobotoDraft';
+  font-style: normal;
+  font-weight: 500;
+  src: url('@{local-google-font}robotodraft-medium.woff') format('woff');
+}
+
+/** Typography
+* ==========================
+**/
+
+// Variables
+@radius:                    3px;
+@radius-img:                3px;
+@radius-rounded:            100%;
+
+@transition-cubic-timing:   cubic-bezier(0.190,1.000,0.220,1.000);
+
+// Bootstrap Variables Override
+@border-radius-base:        4px;
+@border-radius-large:       5px;
+@border-radius-small:       2px;
+
+// Bootstrap Variables Override
+@headings-line-height:      1.42;
+@headings-font-weight:      300;
+@headings-color:            rgba(0,0,0,.54);
+
+@icon-font-path:            "../fonts/glyphicons/";
+// Font Awesome Variables Override
+@fa-font-path:              "../fonts/fontawesome/";
+// Ion Icons Variables Override
+@ionicons-font-path:        "../fonts/ionicons/";
+// Weather Icons Variables Override
+@weather-icons-path:        "../fonts/weather-icons/";
+//** File name for all font files.
+@icon-font-name:            "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:          "glyphicons_halflingsregular";
+
+//** Icon sizes for use in components
+@icon-normal:               16px;
+@icon-medium:               18px;
+@icon-large:                32px;
+
+@font-size-base:            17px;
+@font-size-large:           @font-size-base + 1;    // 14px ceil((@font-size-base * 1.25)); // ~18px
+@font-size-mini:            @font-size-base - 2;
+@font-size-small:           ceil((@font-size-base * 0.85)); // ~12px
+
+
+@font-weight-bold:          700;
+@font-weight-semi-bold:     600;
+@font-weight-normal:        400;
+@font-weight-thin:          300;
+@font-weight-base:          @font-weight-thin;
+
+@font-size-smaller:         85%;
+
+@font-size-h1:              floor((@font-size-base * 3.444)); // ~62px
+@font-size-h2:              ceil((@font-size-base * 2.889)); // ~52px
+@font-size-h3:              ceil((@font-size-base * 2.222)); // ~40px
+@font-size-h4:              ceil((@font-size-base * 1.611)); // ~29px
+@font-size-h5:              floor((@font-size-base * 1.556)); // ~28px
+@font-size-h6:              ceil((@font-size-base * 1.333)); // ~24px
+
+@line-height-base:          1.428571429;
+@line-height-large:         1.33;
+@line-height-small:         1.5;
+@line-height-computed:      floor((@font-size-base * @line-height-base));
+@link-color:                #218BC3;
+
+@headings-font-family:      inherit;
+@headings-font-weight:      700;
+@headings-line-height:      1.1;
+@headings-color:            inherit;

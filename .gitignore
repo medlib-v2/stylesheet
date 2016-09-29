@@ -1,6 +1,7 @@
 # IntelliJ project files
-.idea
+.idea/
 .DS_Store
-node_modules
-bower_components
-app
+node_modules/
+bower_components/
+app/
+gulpfile-save.js

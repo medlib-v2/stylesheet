@@ -1,0 +1,109 @@
+.register-switch-input {
+  display: none;
+}
+
+.register-switch {
+  height: 32px;
+  margin-bottom: 15px;
+  padding: 0;
+  border-radius: 2px;
+}
+
+.register-switch-label {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  line-height: 32px;
+  color: #445870;
+  text-align: center;
+  cursor: pointer;
+  display:inline;
+
+  &:before,
+  &:after {
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+  }
+
+  .register-switch-icon-male {
+    background: url("../img/toggle-male.svg") no-repeat center center;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin: 0;
+    background-size: 100% 70%;
+    -webkit-background-size: 100% 70%; /*  Safari  */
+    -khtml-background-size: 100% 70%; /*  Konqueror  */
+    -moz-background-size: 100% 70%; /*  Firefox  */
+  }
+
+  .register-switch-icon-female {
+    background: url("../img/toggle-female.svg") no-repeat center center;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin: 0;
+    background-size: 100% 70%;
+    -webkit-background-size: 100% 70%; /*  Safari  */
+    -khtml-background-size: 100% 70%; /*  Konqueror  */
+    -moz-background-size: 100% 70%; /*  Firefox  */
+  }
+}
+
+.register-switch-input:checked + .register-switch-label {
+  font-weight: normal;
+  color: #445870;
+  border-radius: 40px;
+  border: 1px solid #DADADA;
+  background: #DADADA;
+  background-image: -webkit-linear-gradient(top, #fefefe, #DADADA);
+  background-image: -moz-linear-gradient(top, #fefefe, #DADADA);
+  background-image: -o-linear-gradient(top, #fefefe, #DADADA);
+  background-image: linear-gradient(to bottom, #fefefe, #DADADA);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: All 0.3s ease;
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+}
+/* background: */
+//background: #DADADA;
+//border: 1px solid #DADADA;
+//border-radius: 40px;
+/* Fill-1: */
+//background: #FFFFFF;
+/* Fill-3: */
+//background: #445870;
+/* Male: */
+//font-family: WorkSans-Regular;
+//font-size: 12px;
+//color: #445870;
+
+:-moz-placeholder {
+  color: #445870;
+  font-weight: 300;
+}
+
+::-moz-placeholder {
+  color: #445870;
+  font-weight: 300;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color:  #445870;
+  font-weight: 300;
+}
+
+:-ms-input-placeholder {
+  color:  #445870;
+  font-weight: 300;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

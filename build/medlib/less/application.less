@@ -1,5 +1,5 @@
-/*
-Medlib Dashboard Theme (application.css)
+/**
+MEDLIB (application.css)
 ---------------------------
 TABLE OF CONTENTS:
 1 - Global Libraries
@@ -7,10 +7,11 @@ TABLE OF CONTENTS:
   1.2 - Font Awesome
   1.3 - Font IonIcons
   1.4 - Weather Icons
+  1.5 - Animate css
 2 - Define Fonts
 3 - Global Defaults
 4 - Layouts
-  4.1 - Navbar
+  4.1 - Navigation
   4.2 - Sidebar
   4.3 - Header
   4.4 - Content Area
@@ -33,32 +34,26 @@ TABLE OF CONTENTS:
 8 - Print
 ---------------------------
 Medlib Style Controller
+**/
 
-Include Libraries
-*/
-@import "globals/libraries";
+/** Global including variables **/
+@import "variables";
+/** Utility mixins for greater good **/
+@import "mixins";
 
-// Globals Settings
-@import "globals/colors"; // Import the global colors
-@import "globals/fonts"; // Import the global fonts
-@import "globals/variables"; // Import the global variables
-@import "globals/defaults"; // Import the global defaults
+/** Plugins **/
+@import "plugins/libraries";
+@import "plugins/vendors";
+@import "plugins/drop-uploader";
 
+/**  Element **/
+@import "elements";
 
-// Local Variables
+/** Plugin **/
+@import "plugins/base";
 
-@import "variables"; // Import this Layout Variables
+/** Pages **/
+@import "pages";
 
-// Layouts
-@import "layouts/layouts";
-@import "layouts/navbar";
-
-@import "layouts/header";
-@import "layouts/content";
-@import "layouts/footer";
-
-@import "layouts/overlay";
-@import "layouts/layer-menu";
-@import "layouts/side-menu";
-@import "layouts/layer-search";
-@import "layouts/layer-user";
+/** Mobile Specific Styles & Settings **/
+@import "mobile";

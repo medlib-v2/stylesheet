@@ -1,0 +1,54 @@
+/**
+* Buttons
+* =========================
+**/
+
+@btn-default-border:         #ccc;
+@btn-font-size-base:         @component-font-size-base;
+@btn-font-size-xs:           ceil((@component-font-size-base * 0.8));   // ~12px
+@btn-font-size-sm:           floor((@component-font-size-base * 0.867)); // ~13px
+@btn-font-size-lg:           ceil((@component-font-size-base * 1.133));  // ~17px
+@btn-font-size-hg:           floor((@component-font-size-base * 1.467)); // ~22px
+
+@btn-line-height-base:       1.4;   // ~21px
+@btn-line-height-hg:         1.227; // ~27px
+@btn-line-height-lg:         1.471; // ~25px
+@btn-line-height-sm:         1.385; // ~16px
+@btn-line-height-xs:         1.083; // ~13px
+
+@btn-social-font-size-base:   floor((@component-font-size-base * 0.867)); // ~13px
+@btn-social-line-height-base: 1.077;  // ~14px
+
+@btn-font-weight:            normal;
+
+/** Btn Default **/
+@btn-default-color:          @gray-light;
+@btn-default-bg:             mix(@gray-light, @white, 50%);
+@btn-hover-bg:               mix(@gray-light, @white, 60%);
+@btn-active-bg:              mix(@gray-light, lighten(@black, 33.5%), 75%);
+
+@btn-primary-hover-bg:       mix(@gray-light, @white, 60%);
+@btn-primary-active-bg:      mix(@brand-secondary, lighten(@black, 33.5%), 85%);
+
+@btn-info-hover-bg:          mix(@brand-info, @white, 80%);
+@btn-info-active-bg:         mix(@brand-info, lighten(@black, 33.5%), 85%);
+
+@btn-success-hover-bg:       mix(@brand-success, @white, 80%);
+@btn-success-active-bg:      mix(@brand-success, lighten(@black, 33.5%), 85%);
+
+@btn-danger-hover-bg:        mix(@brand-danger, @white, 80%);
+@btn-danger-active-bg:       mix(@brand-danger, lighten(@black, 33.5%), 85%);
+
+@btn-warning-hover-bg:       mix(@brand-warning, @white, 80%); //overlay(@brand-warning, darken(white, 37.5%));
+@btn-warning-active-bg:      mix(@brand-warning, lighten(@black, 33.5%), 85%);
+
+@btn-inverse-hover-bg:       overlay(@brand-primary, darken(@white, 37.5%));
+@btn-inverse-active-bg:      mix(@brand-primary, lighten(@black, 33.5%), 85%);
+
+@btn-link-disabled-color:    @gray-light;
+
+// Allows for customizing button radius independently from global border radius
+@btn-border-radius-base:         @border-radius-base;
+@btn-border-radius-large:        @border-radius-large;
+@btn-border-radius-small:        @border-radius-small;
+
