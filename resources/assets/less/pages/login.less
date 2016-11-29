@@ -1,0 +1,82 @@
+/**
+* Custom pages
+* Login
+**/
+.hideShowPassword-toggle {
+  z-index: 3;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+
+  .hideShowPassword-toggle-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    outline: none;
+  }
+
+  .progress-toggle-vertical {
+    background:url('@{img-url}bubbles-progress.png') no-repeat 0 0;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    right: 2px;
+    width: 5px;
+    min-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 2px;
+    float: left;
+    outline: none;
+
+    .progress-bar {
+      //width: 100%;
+      //height: 0;
+      -webkit-transition: height 0.6s ease;
+      -o-transition: height 0.6s ease;
+      transition: height 0.6s ease;
+    }
+  }
+}
+
+/**
+* Login container for remember me and forgot password
+**/
+.login-tools{
+  padding-top: 18px;
+}
+
+/**
+* Login forgot password link
+**/
+.login-forgot-password{
+  line-height: @input-check-component-size;
+  text-align: right;
+}
+
+/**
+* Login submit
+**/
+.login-submit{
+  padding-top: 19px;
+  margin-bottom: @form-group-margin-bottom - 2px;
+
+  .btn{
+    width: 100%;
+  }
+
+  /**
+  * Reduce bs col padding
+  **/
+  > div{
+
+    &:first-child{
+      padding-right: 10px;
+    }
+
+    &:last-child{
+      padding-left: 10px;
+    }
+  }
+}

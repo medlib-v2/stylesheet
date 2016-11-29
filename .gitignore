@@ -1,7 +1,8 @@
-# IntelliJ project files
 .idea/
 .DS_Store
+.netbeans.xml
 node_modules/
 bower_components/
 app/
-gulpfile-save.js
+!.gitignore
+yarn.lock
