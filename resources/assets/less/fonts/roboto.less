@@ -1,0 +1,39 @@
+.roboto-font(@type, @weight, @style) {
+    @font-face {
+        font-family: 'Roboto';
+        src: url('@{local-roboto-font}/Roboto-@{type}.eot');
+        src: local('Roboto @{type}'),
+             local('Roboto-@{type}'),
+             url('@{local-roboto-font}/Roboto-@{type}.eot?#iefix') format('embedded-opentype'),
+             url('@{local-roboto-font}/Roboto-@{type}.woff2') format('woff2'),
+             url('@{local-roboto-font}/Roboto-@{type}.woff') format('woff'),
+             url('@{local-roboto-font}/Roboto-@{type}.ttf') format('truetype'),
+             url('@{local-roboto-font}/Roboto-@{type}.svg#Roboto') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+
+    @font-face {
+        font-family: 'Roboto-@{type}';
+        src: url('@{local-roboto-font}/Roboto-@{type}.eot');
+        src: local('Roboto @{type}'),
+             local('Roboto-@{type}'),
+             url('@{local-roboto-font}/Roboto-@{type}.eot?#iefix') format('embedded-opentype'),
+             url('@{local-roboto-font}/Roboto-@{type}.woff2') format('woff2'),
+             url('@{local-roboto-font}/Roboto-@{type}.woff') format('woff'),
+             url('@{local-roboto-font}/Roboto-@{type}.ttf') format('truetype'),
+             url('@{local-roboto-font}/Roboto-@{type}.svg#Roboto') format('svg');
+    }
+}
+
+.roboto-font-pair(@type, @weight) {
+    .roboto-font('@{type}', @weight, normal);
+    .roboto-font('@{type}Italic', @weight, italic);
+}
+
+.roboto-font-pair('Thin', 100);
+.roboto-font-pair('Light', 300);
+.roboto-font-pair('Regular', 400);
+.roboto-font-pair('Medium', 500);
+.roboto-font-pair('Bold', 700);
+.roboto-font-pair('Black', 900);
